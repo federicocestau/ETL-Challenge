@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <title>Hello Music</title>
+</head>
+
+<body>
+    <div class="jumbotron text-center bg-info">
+        <h1 class="display-3">Hello, Music!</h1>
+        <p class="lead">Below I am showing two tables with the top hits of 2019 according to the Guardian and Spotify</p>
+        <hr class="my-2">
+        <a class="btn btn-primary btn-lg" href="https://www.youtube.com/watch?v=xNV38nq1fqc"target="_blank"></a>Push Play!</a> 
+        </p>
+
+        <h1 class="display-3">Do you feel the beat?</h1>
+        <img src="https://media.idownloadblog.com/wp-content/uploads/2018/03/Apple-Music-icon-002.jpg" class="img-fluid" alt="Responsive image">
+      </div>
+      <div class="container">
+      <div class="row" id="mars-facts">
+        <div class="col-md-12">
+          <h4>Guardian Table</h4>
+          {{gdata.df2|safe}}
+        </div>
+      </div>
+      <div class="row" id="mars-facts">
+        <div class="col-md-12">
+          <h4>Spotify Table</Table></h4>
+          {{sdata.df3|safe}}
+        </div>
+      </div>
+      </div>
+      <!-- Bootstrap -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
