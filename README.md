@@ -1,6 +1,6 @@
 # ETL-Challenge
 
-In this challenge I used two tables, one CSV from koogle.com with the top songs from Spotify 2019 and the other table was created using The Guardian link to scrap into the table and get the information. The following concepts were used:
+In this challenge I used two tables, one CSV from koogle.com with the top songs from Spotify 2019 and the other table was created using The Guardian link to scrap into the information and get the table. The following concepts were used:
 
 Extract: your original data sources and how the data was formatted (CSV, JSON, pgAdmin 4, etc).
 
